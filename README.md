@@ -40,7 +40,7 @@ The project is a backend server application designed to integrate a pre-trained 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/jahnavi02/aspireit
    ```
 
 2. Install dependencies:
@@ -63,6 +63,18 @@ The project is a backend server application designed to integrate a pre-trained 
     ```
 5. Access the application:
 Open a web browser and navigate to http://localhost:3000.
+
+
+## Testing with Postman
+
+To test the project using Postman, follow these steps:
+
+1. Import Postman Collection: Download the Postman collection file provided in the repository.
+
+...
+
+For detailed API documentation, refer to the [Postman Documentation](https://documenter.getpostman.com/view/21718094/2sA3JT3JAx).
+
 
 
 
