@@ -1,7 +1,9 @@
-// controllers/fileController.js
+//importing required modules
 const path = require('path');
 const multer = require('multer');
 const File = require('../models/File');
+
+//multer logic
 
 const storage = multer.memoryStorage();
 const upload = multer({
@@ -17,6 +19,8 @@ const upload = multer({
 });
 
 exports.uploadMiddleware = upload.single('file');
+
+//uploading the file controller
 
 exports.uploadFile = async (req, res) => {
   try {

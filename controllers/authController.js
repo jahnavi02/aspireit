@@ -1,7 +1,9 @@
-// controllers/authController.js
+//importing required modules
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const User = require('../models/User');
+
+//registering user controller
 
 exports.register = async (req, res) => {
   const { username, password } = req.body;
@@ -13,6 +15,8 @@ exports.register = async (req, res) => {
     res.status(500).json({ error: 'Registration failed' });
   }
 };
+
+//logging in the user controller
 
 exports.login = (req, res, next) => {
   passport.authenticate('local', { session: false }, (err, user, info) => {

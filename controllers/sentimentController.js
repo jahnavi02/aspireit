@@ -1,5 +1,7 @@
-// controllers/sentimentController.js
+//importing required modules
 const vader = require('vader-sentiment');
+
+//analysing sentiment controller
 
 exports.analyzeSentiment = (req, res) => {
   const text = req.body.text;

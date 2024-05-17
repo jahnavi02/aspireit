@@ -1,5 +1,7 @@
-// models/File.js
+//importing required modules
 const mongoose = require('mongoose');
+
+//creating the file storage schema
 
 const fileSchema = new mongoose.Schema({
   filename: { type: String, required: true },

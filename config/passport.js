@@ -1,9 +1,11 @@
-// config/passport.js
+//importing required modules
 const LocalStrategy = require('passport-local').Strategy;
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
+
+//passposrt.js authentication logic
 
 module.exports = function(passport) {
   passport.use(

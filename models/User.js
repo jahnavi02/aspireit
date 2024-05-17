@@ -1,6 +1,8 @@
-// models/User.js
+//importing required modules
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+
+//cretaing user with hashed password schema
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
